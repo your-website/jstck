@@ -4,10 +4,10 @@
 @import './__line/header__line.scss';
 @import './__list/header__list.scss';
 @import './__navigation/header__navigation.scss';
-@import './__button-login/button-login.scss';
-@import './__button-registration/button-registration.scss';
-@import './__logo/_logo';
-@import './__container/_container';
+@import './__buttonLogin/header__button-login.scss';
+@import './__buttonRegistration/header__button-registration.scss';
+@import './__logo/header__logo.scss';
+@import './__container/header__container';
 
 .header {
     width: calc(100% - 240px);
