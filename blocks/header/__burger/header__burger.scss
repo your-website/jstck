@@ -3,21 +3,10 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 1314px) {
+@media screen and (max-width: 700px) {
     .header__burger {
         display: block;
-        padding-left: 50px;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .header__burger {
-        padding: 0 45px 13px 12px;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .header__burger {
-        padding: 12px 10px 13px 12px;
+        margin: 0;
+        padding: 0 0 19px 2px;
     }
 }

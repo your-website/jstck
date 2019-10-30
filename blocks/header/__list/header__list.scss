@@ -7,8 +7,18 @@
     margin-left: 0;
 }
 
-@media screen and (max-width: 1314px) {
+@media screen and (max-width: 1318px) {
     .header__list {
-        margin-left: 0;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header__list {
+        margin: 57px 4px 0 0;
+    }
+
+    .header__list:last-of-type {
+        margin: 27px 4px 0 0;
     }
 }

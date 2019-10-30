@@ -2,6 +2,8 @@ import "./style.scss";
 
 const burger = document.querySelector('.header__burger');
 const menu = document.querySelector('.header__menu');
+const menuContainer = document.querySelector('.header__container');
+
 const links = document.querySelectorAll('.header__link');
 const lines = document.querySelectorAll('.header__line');
 const anchor = document.querySelector('.footer__anchor');
@@ -9,6 +11,7 @@ const anchor = document.querySelector('.footer__anchor');
 function burgerClick() {
     // Toggle Navigation
     menu.classList.toggle('header__menu_active');
+    menuContainer.classList.toggle('header__container_active');
 
     // Animate links
     links.forEach((link, index) => {
@@ -25,12 +28,12 @@ function burgerClick() {
 
 burger.addEventListener('click', burgerClick);
 
-const scrollToTop = () => {
-    const c = document.documentElement.scrollTop || document.body.scrollTop;
-    if (c > 0) {
-        window.requestAnimationFrame(scrollToTop);
-        window.scrollTo(0, c - c / 10);
-    }
-};
+// const scrollToTop = () => {
+//     const c = document.documentElement.scrollTop || document.body.scrollTop;
+//     if (c > 0) {
+//         window.requestAnimationFrame(scrollToTop);
+//         window.scrollTo(0, c - c / 10);
+//     }
+// };
 
-anchor.addEventListener('click', scrollToTop);
+// anchor.addEventListener('click', scrollToTop);

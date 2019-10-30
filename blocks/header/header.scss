@@ -1,12 +1,29 @@
-@import url('./__link/header__link.scss');
-@import url('./__menu/header__menu.scss');
-@import url('./__burger/header__burger.scss');
-@import url('./__line/header__line.scss');
-@import url('./__list/header__list.scss');
-@import url('./__navigation/header__navigation.scss');
-@import url('./__button/header__button.scss');
+@import './__link/header__link.scss';
+@import './__menu/header__menu.scss';
+@import './__burger/header__burger.scss';
+@import './__line/header__line.scss';
+@import './__list/header__list.scss';
+@import './__navigation/header__navigation.scss';
+@import './__button-login/button-login.scss';
+@import './__button-registration/button-registration.scss';
+@import './__logo/_logo';
+@import './__container/_container';
 
 .header {
-    font-family: 'Inter UI Regular';
-    margin-top: 500px;
+    width: calc(100% - 240px);
+    font-family: $fonts;
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        width: calc(100% - 64px);
+        font-family: $fonts;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header {
+        width: calc(100% - 32px);
+        font-family: $fonts;
+    }
 }

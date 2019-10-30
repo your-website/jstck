@@ -2,24 +2,41 @@
     text-decoration: none;
     cursor: pointer;
 
-    font-size: 15px;
-    line-height: 18px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.45px;
 
-    color: #000;
+    color: $ColorTextLinkHeader;
+
+    transition: color 0.2s ease;
+
+        &:hover {
+            color: $ColorTextLinkHeader_hover;
+            text-decoration-line: underline;
+        }
+
+        &:focus {
+            color: $ColorTextLinkHeader_pressed;
+            text-decoration-line: underline;
+        }
 }
 
-.header__link:hover {
-    border-bottom: 4px solid #ff8b02;
-}
-
-@media screen and (max-width: 1438px) {
+@media screen and (max-width: 700px) {
     .header__link {
-        font-size: 13px;
-    }
-}
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 135%;
+        text-align: center;
+        letter-spacing: 1.3px;
+        color: $ColorTextLinkMobileMenu;
 
-@media screen and (max-width: 1314px) {
-    .header__link {
-        opacity: 0;
+            &:hover {
+                color: $ColorTextLinkMobileMenu_hover;
+            }
+    
+            &:focus {
+                color: $ColorTextLinkMobileMenu_hover;
+            }
     }
 }

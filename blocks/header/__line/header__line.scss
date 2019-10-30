@@ -1,6 +1,6 @@
-@import url('./_one/header__line_one.scss');
-@import url('./_two/header__line_two.scss');
-@import url('./_three/header__line_three.scss');
+@import './_one/header__line_one.scss';
+@import './_two/header__line_two.scss';
+@import './_three/header__line_three.scss';
 
 .header__line {
     width: 45px;
@@ -9,9 +9,7 @@
 
     transition: all 0.3s ease;
 
-    border-radius: 7px;
-
-    background-color: #838383;
+    background-color: $ColorBurgerLine;
 
 }
 
@@ -19,5 +17,13 @@
     .header__line {
         height: 4px;
         margin: 8px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header__line {
+        height: 4px;
+        margin: 4px;
+        width: 24px;
     }
 }

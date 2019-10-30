@@ -1,29 +1,30 @@
 .header__navigation {
     position: fixed;
-    top: $asd;
+    top: 0;
     left: 0;
     z-index: 2;
-    width: 100%;
+    width: calc(100% - 240px);
+
+    padding: 0 0 0 $paddingWidth1440;
 
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     min-height: 9vh;
 
-    padding: 5px 41px 0 39px;
-    
     background-color: rgba(255, 255, 255, 0.95);
 }
 
-
-@media screen and (min-width: 1450px) {
+@media screen and (max-width: 900px) {
     .header__navigation {
-        justify-content: center;
+        width: calc(100% - 64px);
+        padding: 0 0 0 $paddingWidth768;
     }
 }
 
-@media screen and (max-width: 1275px) {
+@media screen and (max-width: 550px) {
     .header__navigation {
-        padding-left: 0px;
+        width: calc(100% - 32px);
+        padding: 0 0 0 $paddingWidth320;
     }
 }
