@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Сервис аналитики для продавцов">
+    <meta name="keywords" content="увеличение продаж, amazon, wildberries">
+    <meta name="author" content="Roman Kolpachev">
+
+    <title>JSTCK</title>
+
+    <link rel="icon" href="<%=require('../images/JSTCK-logo-header.ico')%>">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+<body class="page">
+    <header class="header">
+        <nav class="header__navigation">
+            <div class="header__burger">
+                <div class="header__line"></div>
+                <div class="header__line"></div>
+                <div class="header__line"></div>
+            </div>
+
+            <ul class="header__menu">
+                <li class="header__list"><a href="#" class="header__link">Тарифы</a></li>
+                <li class="header__list"><a href="#" class="header__link">Возможности</a></li>
+            </ul>
+
+            <button class="header__button">Войти</button>
+            <button class="header__button">Регистрация</button>
+        </nav>
+    </header>
+
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>
