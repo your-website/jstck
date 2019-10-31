@@ -3,8 +3,14 @@
     height: 52px;
     border: none;
     outline: none;
+    cursor: pointer;
+
     text-align: center;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.4px;
     color: $ColorTextToRegister;
+    
     background-color: $ColorToRegister;
 
     transition: background-color 0.2s ease,
