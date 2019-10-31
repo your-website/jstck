@@ -1,0 +1,15 @@
+.content {
+    height: 959px;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        height: 951px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .content {
+        height: 1095px;
+    }
+}

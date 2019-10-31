@@ -7,6 +7,48 @@
 @import './__icon/footer__icon.scss';
 
 .footer {
+    display: grid;
+    grid-template-areas: "social product about help"  
+                         "policy policy policy policy";
     min-height: 320px;
+
+    padding: 60px $paddingWidth1440 0;
+
+    font-family: $fonts;
+
     background-color: #222222;
+}
+
+@media screen and (max-width: 900px) {
+    .footer {
+        padding: 60px $paddingWidth768 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        grid-template-areas: "social social social"  
+                             "product about help"
+                             "policy policy policy";
+        padding: 49px $paddingWidth768 0;
+        
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .footer {
+        grid-template-areas: "social"  
+                             "product"
+                             "about"
+                             "help"
+                             "policy";
+        padding: 49px $paddingWidth768 0;
+        
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer {
+        padding: 49px $paddingWidth320 0;
+    }
 }

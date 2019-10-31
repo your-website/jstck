@@ -1,0 +1,13 @@
+@import './__background-image/sale__background-image.scss';
+@import './__container-brand/sale__container-brand.scss';
+@import './__content-title/sale__content-title.scss';
+@import './__image/sale__image.scss';
+@import './__paragraph/sale__paragraph.scss';
+@import './__button/sale__button.scss';
+@import './__input/sale__input.scss';
+
+.sale {
+    position: relative;
+    font-family: $fonts;
+    padding: 213px 2px 0 120px;
+}

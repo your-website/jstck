@@ -1,0 +1,15 @@
+.footer__social_links {
+    padding-top: 37px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__social_links {
+        padding: 24px 0 20px 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer__social_links {
+        padding: 24px 0 32px 0;
+    }
+}

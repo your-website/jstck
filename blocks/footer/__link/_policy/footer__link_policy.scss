@@ -1,3 +1,31 @@
-.footer__link_policy {
-    
+.footer__link.footer__link_policy {
+    color: $ColorTextLinkPolicy;
+    margin-left: 45%;
+    padding-bottom: 4px;
+    font-weight: 500;
+    line-height: 115%;
+    letter-spacing: 0.45px;
+
+        &:hover {
+            color: $ColorTextLinkPolicy_hover;
+            text-decoration-line: underline;
+        }
+
+        &:focus {
+            color: $ColorTextLinkPolicy_pressed;
+            text-decoration-line: underline;
+        }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__link.footer__link_policy {
+        margin-left: 0;
+        padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .footer__link.footer__link_policy {
+        padding-top: 35px;
+    }
 }
