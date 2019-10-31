@@ -10,7 +10,7 @@
     text-align: center;
     letter-spacing: 0.4px;
     color: $ColorTextToRegister;
-    
+
     background-color: $ColorToRegister;
 
     transition: background-color 0.2s ease,
@@ -25,4 +25,12 @@
             color: $ColorTextToRegister_pressed;
             background-color: $ColorToRegister_pressed;
         }
+}
+
+@media screen and (max-width: 500px) {
+    .sale__button {
+        width: 288px;
+        height: 52px;
+        margin: 32px 0 0 -6px;
+    }
 }

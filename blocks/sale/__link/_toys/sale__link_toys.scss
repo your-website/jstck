@@ -1,0 +1,15 @@
+.sale__link.sale__link_toys {
+    grid-area: toys;
+}
+
+@media screen and (max-width: 768px) {
+    .sale__link.sale__link_toys {
+        margin-left: 145px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .sale__link.sale__link_toys {
+        margin-left: 0;
+    }
+}

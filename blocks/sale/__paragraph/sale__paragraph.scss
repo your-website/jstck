@@ -6,3 +6,12 @@
     letter-spacing: 0.7px;
     line-height: 25px;
 }
+
+@media screen and (max-width: 500px) {
+    .sale__paragraph {
+        margin: 13px 0 52px 0;
+        font-size: 19px;
+        line-height: 125%;
+        letter-spacing: 0.2px;
+    }
+}

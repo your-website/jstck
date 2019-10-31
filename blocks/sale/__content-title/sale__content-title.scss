@@ -7,3 +7,20 @@
 
     color: $ColorButtonTitleSectionSale;
 }
+
+@media screen and (max-width: 768px) {
+    .sale__content-title {
+        color: $ColorButtonTitleSectionSale;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sale__content-title {
+        margin-right: 30px;
+        font-size: 27px;
+        line-height: 125%;
+        text-align: center;
+        letter-spacing: 0.6px;
+        color: $ColorButtonTitleSectionSale;
+    }
+}

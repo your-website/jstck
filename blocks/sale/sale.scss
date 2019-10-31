@@ -6,9 +6,24 @@
 @import './__button/sale__button.scss';
 @import './__input/sale__input.scss';
 @import './__form/sale__form.scss';
+@import './__link/sale__link.scss';
 
 .sale {
     position: relative;
     font-family: $fonts;
     padding: 213px 2px 0 120px;
+}
+
+@media screen and (max-width: 768px) {
+    .sale {
+        position: relative;
+        font-family: $fonts;
+        padding: 213px 2px 0 $paddingWidth768;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sale {
+        padding: 84px 2px 0 20px;
+    }
 }

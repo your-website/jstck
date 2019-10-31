@@ -1,0 +1,15 @@
+.sale__link_izare {
+    grid-area: izare;
+}
+
+@media screen and (max-width: 768px) {
+    .sale__link.sale__link_izare {
+        margin-left: 27px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sale__link.sale__link_izare {
+        margin-left: 0;
+    }
+}
