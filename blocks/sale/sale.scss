@@ -11,19 +11,26 @@
 .sale {
     position: relative;
     font-family: $fonts;
-    padding: 213px 2px 0 120px;
+    max-width: 1200px;
+    min-height: 741px;
+    margin: 238px auto 0;
+    padding: 0 $paddingWidth1440;
 }
-
+ 
 @media screen and (max-width: 768px) {
     .sale {
-        position: relative;
         font-family: $fonts;
-        padding: 213px 2px 0 $paddingWidth768;
+        margin: 239px auto 0;
+        padding: 0 $paddingWidth768;
+        min-height: 733px;
     }
 }
 
 @media screen and (max-width: 500px) {
     .sale {
-        padding: 84px 2px 0 20px;
+        min-height: none;
+        max-height: 1014px;
+        margin: 102px auto 0;
+        padding: 0 2px 0 17px;
     }
 }

@@ -27,10 +27,22 @@
         }
 }
 
+@media screen and (max-width: 540px) {
+    .sale__button {
+        width: 170px;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .sale__button {
         width: 288px;
         height: 52px;
-        margin: 32px 0 0 -6px;
+        margin: 32px auto 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .sale__button {
+        margin: 32px 0 0 -3px;
     }
 }

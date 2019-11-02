@@ -1,0 +1,18 @@
+.brand__link_mui {
+    grid-area: mui;
+}
+
+@media screen and (max-width: 768px) {
+    .brand__link.brand__link_mui {
+        align-self: center;
+        margin: 0 auto 0 8px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .brand__link.brand__link_mui {
+        margin: 0 auto 0 0;
+        align-self: flex-end;
+
+    }
+}

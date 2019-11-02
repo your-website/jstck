@@ -1,3 +1,7 @@
 .form__input {
     
 }
+
+.form__input:invalid:not(:placeholder-shown) + .form__error {
+	display: block;
+}

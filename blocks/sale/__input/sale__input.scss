@@ -9,13 +9,18 @@
     letter-spacing: 0.2px;
 }
 
-
 @media screen and (max-width: 500px) {
     .sale__input {
         width: 288px;
         height: 52px;
-        margin: 0 0 0 -6px;
+        margin: 0;
         text-align: center;
         padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .sale__input {
+        margin: 0 0 0 -16px;
     }
 }

@@ -1,6 +1,6 @@
 @import './_active/header__container_active.scss';
 .header__container {
-    
+    display: flex;
 }
 
 @media screen and (max-width: 700px) {

@@ -1,0 +1,15 @@
+.brand__link_izare {
+    grid-area: izare;
+}
+
+@media screen and (max-width: 768px) {
+    .brand__link.brand__link_izare {
+        padding-right: 9px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .brand__link.brand__link_izare {
+        margin-left: 0;
+    }
+}
