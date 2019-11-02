@@ -6,6 +6,7 @@
 
 .sale__image {
     display: block;
+    transition: background-image 2s ease;
 }
 
 .sale__image:first-of-type {

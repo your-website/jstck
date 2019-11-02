@@ -15,6 +15,10 @@
     min-height: 741px;
     margin: 238px auto 0;
     padding: 0 $paddingWidth1440;
+    background-image: url("./s1200.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
  
 @media screen and (max-width: 768px) {
