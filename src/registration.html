@@ -11,7 +11,7 @@
     <title>JSTCK</title>
 
     <link rel="icon" href="<%=require('./images/JSTCK-logo-header.ico')%>">
-    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.registration.css %>">
 </head>
 <body class="page">
     <header class="header">
@@ -59,7 +59,7 @@
                     <div class="form__field form__field_registration">
                         <label class="form__label form__label_registration" for = "email">E-mail</label>
                         <input id="email" class="form__input form__input_registration" type="email" name="name" pattern="\w{1,}(-?)*@[a-z]+\.{1}[a-z]{2,}" placeholder="mail@excample.com" required />
-                        <span class="form__error form__error_email">e-mail в формате: mail@excample.com</span>
+                        <!-- <span class="form__error form__error_email">e-mail в формате: mail@excample.com</span> -->
                     </div>
                     <div class="form__field form__field_registration">
                         <label class="form__label form__label_registration" for = "password">Пароль</label>
@@ -72,7 +72,7 @@
                     <button disabled="true" class="form__submit form__submit_registration" type="submit">Зарегистрироваться</button>
                 </fieldset>
             </form>
-            <p class="registration__paragraph">Уже регистрировались у нас?<a class="login__link" href="./login.html">Войти</a></p>
+            <p class="registration__paragraph">Уже регистрировались у нас? <a class="registration__link" href="./login.html">Войти</a></p>
         </section>
     </main>
 
@@ -144,6 +144,6 @@
                 <a href="#" class="footer__link footer__link_policy">Политика конфиденциальности</a>
             </div>
         </footer>
-    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    <script src="<%= htmlWebpackPlugin.files.chunks.registration.entry %>"></script>
 </body>
 </html>

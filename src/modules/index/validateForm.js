@@ -1,12 +1,5 @@
 let form = document.forms.register;
 let formEmail = form.querySelector('input[type=email]');
-let formPassword = form.querySelector('input[type=password]');
-
-
-let bulleanText = false;
-let bulleanEmail = false;
-let bulleanTel = false;
-let bulleanUrl = false;
 
 export class Validate {
     constructor() {
@@ -28,14 +21,6 @@ export class Validate {
         this.say(reg, val, errorField, errorValue);
     }
 
-    validatePassword(pattern, str) {
-        let reg = pattern;
-        let val = str;
-        let errorField = '.form__error_password';
-        let errorValue = "Введен неверный пароль";
-        this.say(reg, val, errorField, errorValue);
-    }
-
     validateSubmit(pattern) {
 
     }
@@ -53,25 +38,10 @@ export class Validate {
 //     }
 // }
 
-function checkStylePassword() {
-    if (formPassword.checkValidity()) {
-        document.querySelector('.form__input_password').style.border = "1px solid red";
-        document.querySelector('.form__label_login-password').style.color = "red";
-    } else {
-        document.querySelector('.form__input_password').style.border = "1px solid red";
-        document.querySelector('.form__label_login-password').style.color = "red";
-    }
-}
-
 const validate = new Validate();
 
 formEmail.addEventListener('input', function (event) {
     validate.validateEmail(formEmail.pattern, event.target);
-});
-
-formPassword.addEventListener('input', function (event) {
-    validate.validatePassword(formPassword.pattern, event.target);
-    checkStylePassword();
 });
 
 form.addEventListener('submit', function (event) {

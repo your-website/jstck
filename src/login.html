@@ -11,7 +11,7 @@
     <title>JSTCK</title>
 
     <link rel="icon" href="<%=require('./images/JSTCK-logo-header.ico')%>">
-    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.login.css %>">
 </head>
 <body class="page">
     <header class="header">
@@ -58,8 +58,8 @@
                     </div>
                     <div class="form__field form__field_login-password">
                         <label class="form__label form__label_login-password" for = "password">Пароль</label>
-                        <input id="password" class="form__input form__input_password" pattern="1234567" type="password" name="password" required />
-                        <span class="form__error form__error_password">Введен неверный пароль.</span>
+                        <input id="password" class="form__input form__input_password" pattern="123" type="password" name="password" required />
+                        <span class="form__error form__error_password"></span>
                     </div>
                     <div class="form__field form__field_login-checkbox">
                         <input id="remember" type="checkbox" class="form__checkbox form__checkbox_login-checkbox" checked/>
@@ -140,6 +140,6 @@
                 <a href="#" class="footer__link footer__link_policy">Политика конфиденциальности</a>
             </div>
         </footer>
-    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    <script src="<%= htmlWebpackPlugin.files.chunks.login.entry %>"></script>
 </body>
 </html>
