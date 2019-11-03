@@ -75,6 +75,18 @@ module.exports = {
             template: './src/index.html',
             filename: 'index.html'
         }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
+            template: './src/login.html',
+            filename: 'login.html'
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
+            template: './src/registration.html',
+            filename: 'registration.html'
+        }),
         new WebpackMd5Hash()
     ]
 };

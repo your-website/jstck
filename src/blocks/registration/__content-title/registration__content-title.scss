@@ -1,0 +1,20 @@
+.registration__content-title {
+    font-family: 'Inter UI Bold';
+    padding: 81px 0 0 0;
+    margin-bottom: 14px;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 3.3px;
+    color: #00376E;
+}
+
+@media screen and (max-width: 500px) {
+    .registration__content-title {
+        margin-right: 12px;
+        padding: 84px 10px 0 0;
+        font-size: 27px;
+        line-height: 125%;
+        text-align: center;
+        letter-spacing: 0.6px;
+    }
+}

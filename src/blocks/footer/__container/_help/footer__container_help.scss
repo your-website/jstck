@@ -1,0 +1,20 @@
+.footer__container_help {
+    grid-area: help;
+    margin-right: 16%;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__container_help {
+        margin-left: auto;
+        margin-right: 0;
+        padding-right: 14px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .footer__container_help {
+        margin: 0 auto 34px;
+        padding-right: 0;
+        text-align: center;
+    }
+}

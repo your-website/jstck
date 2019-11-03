@@ -1,0 +1,15 @@
+@import './_iltani/brand__image_iltani.scss';
+@import './_izare/brand__image_izare.scss';
+@import './_miu/brand__image_miu.scss';
+@import './_r/brand__image_r.scss';
+@import './_toys/brand__image_toys.scss';
+
+.brand__image {
+    display: block;
+    margin: 0 auto;
+
+    transition: background-image 0.7s ease;
+}
+
+.brand__image:first-of-type {
+}

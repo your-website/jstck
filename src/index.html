@@ -10,7 +10,7 @@
 
     <title>JSTCK</title>
 
-    <link rel="icon" href="<%=require('../images/JSTCK-logo-header.ico')%>">
+    <link rel="icon" href="<%=require('./images/JSTCK-logo-header.ico')%>">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
 <body class="page">
@@ -35,8 +35,8 @@
             </ul>
 
             <div class="header__container">
-                <button class="header__button-login">Войти</button>
-                <button class="header__button-registration">Регистрация</button>
+                <a class="header__link" href="./login.html"><button class="header__button-login">Войти</button></a>
+                <a class="header__link" href="./registration.html"><button class="header__button-registration">Регистрация</button></a>
             </div>
 
             <div class="header__burger">
@@ -49,24 +49,24 @@
 
     <main class="content">
         <section class="sale">
-            <img src="../images/bg.svg" alt="" class="sale__background-image">
             <h1 class="sale__content-title">Увеличиваем ваши продажи на&nbsp;30% в&nbsp;<span class="text-color text-color_sale-content-title">Wildberries,&nbsp;Amazon</span></h1>
             <p class="sale__paragraph">Сервис аналитики для продавцов, торгующих через маркетплейсы</p>
-            <form novalidate class="form sale__form" name="register" action="" method="POST">
+            <form novalidate class="form" name="register" action="" method="POST">
                 <fieldset class="form__fieldset form__fieldset_sale">
                     <div class="form__field form__field_sale">
-                        <input class="form__input sale__input" type="email" name="name" pattern="\w{1,}(-?)*@[a-z]+\.{1}[a-z]{2,}" placeholder="mail@excample.com" required />
+                        <input class="form__input form__input_email" type="email" name="name" pattern="\w{1,}(-?)*@[a-z]+\.{1}[a-z]{2,}" placeholder="mail@excample.com" required />
                         <span class="form__error form__error_email">e-mail в формате: mail@excample.com</span>
                     </div>
-                    <button disabled="true" class="form__button sale__button" type="submit">Зарегистрироваться</button>
+                    <a href=""></a>
+                    <button disabled="true" class="form__submit form__submit_sale" type="submit">Зарегистрироваться</button>
                 </fieldset>
             </form>
             <div class="brand brand_position-sale">
-                <a href="#" class="brand__link brand__link_iltani"><img src="../images/Brand_Iltani.png" alt="" class="brand__image brand__image_iltani"></a>
-                <a href="#" class="brand__link brand__link_r"><img src="../images/Brand_R.png" alt="" class="brand__image brand__image_r"></a>
-                <a href="#" class="brand__link brand__link_izare"><img src="../images/BRAND_Izare.png" alt="" class="brand__image brand__image_izare"></a>
-                <a href="#" class="brand__link brand__link_toys"><img src="../images/Brand_Toys.png" alt="" class="brand__image brand__image_toys"></a>
-                <a href="#" class="brand__link brand__link_mui"><img src="../images/Brand_miu.png" alt="" class="brand__image brand__image_miu"></a>
+                <a href="#" class="brand__link brand__link_iltani"><div class="brand__image brand__image_iltani"></div></a>
+                <a href="#" class="brand__link brand__link_r"><div class="brand__image brand__image_r"></div></a>
+                <a href="#" class="brand__link brand__link_izare"><div class="brand__image brand__image_izare"></div></a>
+                <a href="#" class="brand__link brand__link_toys"><div class="brand__image brand__image_toys"></div></a>
+                <a href="#" class="brand__link brand__link_mui"><div class="brand__image brand__image_miu"></div></a>
             </div>
         </section>
     </main>
@@ -131,8 +131,11 @@
             <a href="#" class="footer__link footer__link_space">Интеграции</a>
             <a href="#" class="footer__link footer__link_space">Разработчикам</a>
         </div>
-        <div class="footer__container footer__container_policy">
+        <div class="footer__container footer__container_line"></div>
+        <div class="footer__container footer__container_copyright">
             <p class="footer__paragraph">&copy;2018.JSTCK</p>
+        </div>
+        <div class="footer__container footer__container_policy">
             <a href="#" class="footer__link footer__link_policy">Политика конфиденциальности</a>
         </div>
     </footer>

@@ -1,5 +1,7 @@
 let form = document.forms.register;
 let formEmail = form.querySelector('input[type=email]');
+let formPassword = form.querySelector('input[type=password]');
+
 
 let bulleanText = false;
 let bulleanEmail = false;
@@ -9,6 +11,7 @@ let bulleanUrl = false;
 export class Validate {
     constructor() {
         this.say = function(pattern, str, errorField, errorValue) {
+            console.log(str.value.match(pattern));
             if (str.value.match(pattern) === null) {
                 document.querySelector(`${errorField}`).textContent = errorValue;
             } else if (str.value.match(pattern)[0].length === str.length) {
@@ -22,6 +25,14 @@ export class Validate {
         let val = str;
         let errorField = '.form__error_email';
         let errorValue = "e-mail в формате: sega@yandex.ru";
+        this.say(reg, val, errorField, errorValue);
+    }
+
+    validatePassword(pattern, str) {
+        let reg = pattern;
+        let val = str;
+        let errorField = '.form__error_password';
+        let errorValue = "Введен неверный пароль";
         this.say(reg, val, errorField, errorValue);
     }
 
@@ -42,10 +53,25 @@ export class Validate {
 //     }
 // }
 
+function checkStylePassword() {
+    if (formPassword.checkValidity()) {
+        document.querySelector('.form__input_password').style.border = "1px solid red";
+        document.querySelector('.form__label_login-password').style.color = "red";
+    } else {
+        document.querySelector('.form__input_password').style.border = "1px solid red";
+        document.querySelector('.form__label_login-password').style.color = "red";
+    }
+}
+
 const validate = new Validate();
 
 formEmail.addEventListener('input', function (event) {
     validate.validateEmail(formEmail.pattern, event.target);
+});
+
+formPassword.addEventListener('input', function (event) {
+    validate.validatePassword(formPassword.pattern, event.target);
+    checkStylePassword();
 });
 
 form.addEventListener('submit', function (event) {

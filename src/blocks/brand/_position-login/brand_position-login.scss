@@ -1,0 +1,11 @@
+@media screen and (max-width: 500px) {
+    .brand.brand_position-login {
+        grid-template-areas: "iltani r"  
+                                "izare toys"
+                                "mui .";
+        grid-template-columns: 115px 170px;
+        grid-template-rows: 80px 80px 80px;
+        justify-content: center;
+        margin-top: 150px;
+    }
+}

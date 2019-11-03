@@ -1,0 +1,33 @@
+@import './_login/form__input_login.scss';
+@import './_password/form__input_password.scss';
+@import './_email/form__input_email.scss';
+@import './_registration/form__input_registration.scss';
+
+.form__input:invalid:not(:placeholder-shown) + .form__error {
+	display: block;
+}
+
+.form__input {
+    outline: none;
+    position: relative;
+    max-width: 380px;
+    height: 48px;
+    border: 1px solid $ColorToRegister_hover;
+    box-sizing: border-box;
+
+    letter-spacing: 0.2px;
+}
+
+@media screen and (max-width: 500px) {
+    .form__input {
+        width: 288px;
+        height: 52px;
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .form__input {
+    }
+}
