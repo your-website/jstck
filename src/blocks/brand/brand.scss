@@ -7,9 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    max-width: 1144px;
-    min-height: 294px;
-    margin: 0 auto;
+    margin: 84px auto 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -17,8 +15,9 @@
         display: grid;
         grid-template-areas: "iltani iltani r r izare izare"  
                              ". toys toys mui mui mui";
-        grid-template-rows: 207px 147px;
+        grid-template-rows: 47px 147px;
         justify-content: space-between;
+        align-items: flex-start;
         min-height: 411px;
         margin: 0 auto;
     }
@@ -32,7 +31,6 @@
         grid-template-columns: 115px 170px;
         grid-template-rows: 80px 80px 80px;
         justify-content: center;
-        margin-top: 288px;
     }
 }
 

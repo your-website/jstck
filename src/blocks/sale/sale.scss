@@ -1,35 +1,35 @@
 @import './__content-title/sale__content-title.scss';
 @import './__link/sale__link.scss';
 @import './__paragraph/sale__paragraph.scss';
+@import './__container/sale__container.scss';
 
 .sale {
     font-family: $fonts;
     max-width: 1200px;
-    min-height: 955px;
+    min-height: 900px;
     margin: 0 auto;
     padding: 0 $paddingWidth1440;
     background-image: url("./images/bg.png");
-    background-position: right 148px top 100px;
+    background-position: right 148px top 20px;
     background-repeat: no-repeat;
 }
  
 @media screen and (max-width: 768px) {
     .sale {
-        font-family: $fonts;
+        height: 835px;
+        min-height: 100px;
         padding: 0 $paddingWidth768;
-        min-height: 733px;
-        background-position: right 32px top 101px;
+        background-position: right 32px top 21px;
         background-size: 380px 428px;
     }
 }
 
 @media screen and (max-width: 500px) {
     .sale {
-        min-height: none;
-        max-height: 1014px;
+        min-height: 1011px;
         margin: 0 auto 0;
         padding: 0 2px 0 17px;
-        background-position: right 16px top 347px;
+        background-position: right 16px top 260px;
         background-size: 288px 325px;
     }
 }

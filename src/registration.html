@@ -28,22 +28,6 @@
                     </svg>
                 </a>
             </div>
-
-            <ul class="header__menu header__menu_login">
-                <li class="header__list"><a href="#" class="header__link">Тарифы</a></li>
-                <li class="header__list"><a href="#" class="header__link">Возможности</a></li>
-            </ul>
-
-            <div class="header__container header__container_login">
-                <button class="header__button-login">Войти</button>
-                <button class="header__button-registration">Регистрация</button>
-            </div>
-
-            <div class="header__burger">
-                <div class="header__line"></div>
-                <div class="header__line"></div>
-                <div class="header__line"></div>
-            </div>
         </nav>
     </header>
 
@@ -61,11 +45,11 @@
                         <input id="email" class="form__input form__input_registration" type="email" name="name" pattern="\w{1,}(-?)*@[a-z]+\.{1}[a-z]{2,}" placeholder="mail@excample.com" required />
                         <!-- <span class="form__error form__error_email">e-mail в формате: mail@excample.com</span> -->
                     </div>
-                    <div class="form__field form__field_registration">
-                        <label class="form__label form__label_registration" for = "password">Пароль</label>
+                    <div class="form__field form__field_registration-password">
+                        <label class="form__label form__label_login-password" for = "password">Пароль</label>
                         <input id="password" class="form__input form__input_registration form__input_password" type="password" name="password" required />
                     </div>
-                    <div class="form__field form__field_registration">
+                    <div class="form__field form__field_policy">
                         <input id="policy" type="checkbox" class="form__checkbox form__checkbox__registration-checkbox"/>
                         <label class="form__label form__label_registration-checkbox" for="policy">Нажимая кнопку «Зарегистрироваться» я даю согласие на обработку моих персональных данных на условиях, изложенных в <a class="registration__link registration__link_policy" href="">«Политике конфиденциальности»</a></label>
                     </div>

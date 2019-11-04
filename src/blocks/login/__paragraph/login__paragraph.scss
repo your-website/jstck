@@ -1,8 +1,9 @@
 .login__paragraph {
-    margin: 78px 0 0 0;
-    font-size: 18px;
+    margin: 81px 0 0 0;
+    font-size: 16px;
     line-height: 125%;
-    letter-spacing: 0.6px;
+    /* identical to box height, or 20px */
+    letter-spacing: 0.25px;
 }
 
 @media screen and (max-width: 500px) {

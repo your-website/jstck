@@ -12,13 +12,13 @@
 
 @media screen and (max-width: 650px) {
     .footer__container_about {
-        padding-left: 20px;
+        margin-left: 5%;
     }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 550px) {
     .footer__container_about {
-        margin: 0 auto 34px;
+        margin: 2px auto 34px;
         padding-right: 17px;
         text-align: center;
     }

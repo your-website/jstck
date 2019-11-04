@@ -2,9 +2,10 @@
     margin: 0 0 19px 0;
 
     font-weight: bold;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 135%;
-    letter-spacing: 1.3px;
+    /* or 24px */
+    letter-spacing: 0.25px;
 
     color: $ColorTextTitleFooter;
 }

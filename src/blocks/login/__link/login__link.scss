@@ -1,11 +1,11 @@
 .login__link  {
     text-decoration: none;
     cursor: pointer;
-
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 120%;
-    letter-spacing: 0.45px;
+    font-family: $fontsBold;
+    font-size: 16px;
+    line-height: 125%;
+    /* identical to box height, or 20px */
+    letter-spacing: 0.25px;
 
     color:#0041A5;
 
@@ -20,23 +20,4 @@
             color: $ColorTextLinkHeader_pressed;
             text-decoration-line: underline;
         }
-}
-
-@media screen and (max-width: 700px) {
-    .login__link {
-        font-weight: 500;
-        font-size: 19px;
-        line-height: 135%;
-        text-align: center;
-        letter-spacing: 1.3px;
-        color: $ColorTextLinkMobileMenu;
-
-            &:hover {
-                color: $ColorTextLinkMobileMenu_hover;
-            }
-    
-            &:focus {
-                color: $ColorTextLinkMobileMenu_hover;
-            }
-    }
 }

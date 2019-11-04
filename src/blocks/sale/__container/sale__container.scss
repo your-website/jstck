@@ -1,0 +1,23 @@
+.sale__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 584px;
+}
+
+@media screen and (max-width: 768px) {
+    .sale__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 584px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sale__container {
+        justify-content: flex-start;
+        min-height: 584px;
+        margin-top: 25px;
+    }
+}

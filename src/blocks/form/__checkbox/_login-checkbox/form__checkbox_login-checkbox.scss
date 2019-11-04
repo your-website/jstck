@@ -1,8 +1,31 @@
 .form__checkbox_login-checkbox {
-    margin-top: 60px;
+    opacity: 0;
     width: 20px;
     height: 20px;
-    background-color: #37DCD2;
     border-radius: 2px;
     display: inline;
+
+        
+}
+
+.form__checkbox_login-checkbox + label::after {
+    content: none;
+}
+
+.form__checkbox_login-checkbox + label::before {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+
+.form__checkbox_login-checkbox:checked + label::before {
+    background-color: #37DCD2;
+    border: none;
+}
+
+
+.form__checkbox_login-checkbox:checked + label::after {
+    content: "";
+}
+
+.form__checkbox_login-checkbox:focus + label::before {
 }

@@ -46,7 +46,7 @@ function checkStylePassword() {
         document.querySelector('.form__input_password').style.border = "1px solid red";
         document.querySelector('.form__label_login-password').style.color = "red";
         document.querySelector('.form__input_password').style.background = `url(${eyeClose}) no-repeat 3px 1px`;
-        document.querySelector('.form__input_password').style.backgroundPosition = "right 20px top 15px";
+        document.querySelector('.form__input_password').style.backgroundPosition = "right 15px top 20px";
         document.querySelector('.form__input_password').style.color = "red";
     }
 }

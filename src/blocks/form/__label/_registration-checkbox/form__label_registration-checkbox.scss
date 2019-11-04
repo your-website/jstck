@@ -1,11 +1,39 @@
 .form__label_registration-checkbox {
-    position: absolute;
+    position: relative;
     max-width: 350px;
-    top: 60px;
-    left: 30px;
-    font-size: 15px;
-    line-height: 104%;
-    letter-spacing: 0.9px;
-
+    font-size: 14px;
+    line-height: 115%;
+    margin-left: 15px;
+    margin-top: -3px;
+    /* identical to box height, or 16px */
+    letter-spacing: 0.25px;
     color: #222222;
+
+        &::before {
+            position: absolute;
+            top: 2px;
+            left: -29px;
+            content: "";
+            display: inline-block;
+            
+            width: 20px;
+            height: 20px;
+            
+            border-radius: 2px;
+            box-sizing: border-box;
+        }
+
+        &::after {
+            position: absolute;
+            top: 7px;
+            left: -24px;
+            content: "";
+            display: inline-block;
+            height: 6px;
+            width: 9px;
+            border-left: 2px solid #284987;
+            border-bottom: 2px solid #284987;
+            
+            transform: rotate(-53deg);
+        }
 }

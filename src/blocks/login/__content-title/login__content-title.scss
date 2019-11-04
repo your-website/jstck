@@ -1,27 +1,7 @@
 .login__content-title {
-    font-family: 'Inter UI Bold';
-    // margin: 108px 0 41px 0;
-    padding: 81px 0 14px 0;
+    font-family: $fontsBold;
     font-size: 40px;
     line-height: 48px;
-    letter-spacing: 5px;
     color: #00376E;
-}
-
-@media screen and (max-width: 768px) {
-    .login__content-title {
-        color: $ColorButtonTitleSectionSale;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .login__content-title {
-        margin-right: 12px;
-        padding: 84px 10px 0 0;
-        font-size: 27px;
-        line-height: 125%;
-        text-align: center;
-        letter-spacing: 0.6px;
-        color: $ColorButtonTitleSectionSale;
-    }
+    margin: 0 0 40px 0;
 }

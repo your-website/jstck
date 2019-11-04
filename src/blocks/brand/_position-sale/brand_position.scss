@@ -1,6 +1,5 @@
 .brand_position-sale {
     max-width: 1144px;
-    min-height: 294px;
 }
 
 @media screen and (max-width: 768px) {
@@ -11,7 +10,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    .brand_position-sale {
-        margin-top: 288px;
+    .brand.brand_position-sale {
+        margin-top: 80px;
     }
 }

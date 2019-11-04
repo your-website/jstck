@@ -1,8 +1,9 @@
 .form__label_registration {
-    margin: 28px 0 3px 0;
-    font-weight: bold;
+    margin-bottom: 3px;
+    font-family: $fontsBold;
     font-size: 14px;
     line-height: 115%;
-    letter-spacing: 1px;
+    /* identical to box height, or 16px */
+    letter-spacing: 0.25px;
     color: $ColorLoginInputSubmit;
 }

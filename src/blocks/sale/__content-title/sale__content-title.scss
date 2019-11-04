@@ -1,11 +1,10 @@
 .sale__content-title {
 
-    padding-top: 213px;
     max-width: 516px;
-    font-size: 37.6px;
-    line-height: 119%;
+    font-size: 32px;
+    line-height: 130%;
     font-weight: normal;
-    margin-bottom: 0;
+    margin: 0;
 
     color: $ColorButtonTitleSectionSale;
 }
@@ -18,12 +17,11 @@
 
 @media screen and (max-width: 500px) {
     .sale__content-title {
-        margin-right: 12px;
-        padding: 84px 10px 0 0;
-        font-size: 27px;
-        line-height: 125%;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 135%;
         text-align: center;
-        letter-spacing: 0.6px;
+        padding-right: 12px;
         color: $ColorButtonTitleSectionSale;
     }
 }

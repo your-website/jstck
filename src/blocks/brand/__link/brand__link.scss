@@ -6,3 +6,9 @@
 
 .brand__link {
 }
+
+@media screen and (max-width: 768px) {
+    .brand__link {
+        margin-top: -3px;
+    }
+}

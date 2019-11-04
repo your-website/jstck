@@ -17,7 +17,7 @@ export class Validate {
         let reg = pattern;
         let val = str;
         let errorField = '.form__error_email';
-        let errorValue = "e-mail в формате: sega@yandex.ru";
+        let errorValue = "e-mail в формате: mail@excample.com";
         this.say(reg, val, errorField, errorValue);
     }
 

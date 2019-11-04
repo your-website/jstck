@@ -36,7 +36,7 @@
     }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 550px) {
     .footer {
         grid-template-areas: "social"  
                              "product"
@@ -52,6 +52,7 @@
 
 @media screen and (max-width: 550px) {
     .footer {
+        margin-top: 0;
         padding: 49px $paddingWidth320 0;
     }
 }

@@ -1,9 +1,11 @@
 .form__fieldset_sale {
+    margin-top: 68px;
 }
 
 @media screen and (max-width: 500px) {
     .form__fieldset_sale {
         display: flex;
         justify-content: center;
+        margin-top: 52px;
     }
 }

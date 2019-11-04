@@ -1,15 +1,18 @@
 .form__submit.form__submit_login {
-    margin-top: 32px;
     width: 180px;
     height: 52px;
     border: none;
     outline: none;
     cursor: pointer;
     
+    font-family: $fontsBold;
     text-align: center;
-    font-weight: bold;
+    font-size: 14px;
+    line-height: 115%;
+    /* identical to box height, or 16px */
     text-align: center;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.25px;
+
     color: $ColorTextToRegister;
 
     background-color: $ColorLoginInputSubmit;
