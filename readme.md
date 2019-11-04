@@ -4,7 +4,7 @@
 
 Реализован Pixel Perfect для интерфейса 1440, 768, 320. 
 Макеты в папке assets.
-### Ссылка на сайт: [https://github.com/your-website/jstck/](https://github.com/your-website/jstck/);
+### Ссылка на сайт: [https://your-website.github.io/jstck/](https://your-website.github.io/jstck/);
 
 #### Чтобы развернуть проект у себя:
 
