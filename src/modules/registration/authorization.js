@@ -5,11 +5,20 @@ function checkAuthorized(event) {
     event.preventDefault();
     const email = form.elements.email;
     const password = form.elements.password;
+    let location = window.location.href;
+
+    if (location === "http://localhost:8080/registration.html") {
+        location = "http://localhost:8080/index.html";
+    } else {
+        location = "https://your-website.github.io/jstck/index.html";
+    }
+
+    console.log(location);
 
     if (email.value === "roman@yandex.ru" && password.value === "123") {
         localStorage.setItem("authorized", `${email.value}`);
         localStorage.setItem("password", `${password.value}`);
-        window.location.href = `${window.location.href}/index.html`;
+        window.location.href = `${location}`;
     } else alert("введите e-mail: roman@yandex.ru; пароль: 123");
     form.reset();
 };
