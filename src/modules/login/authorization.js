@@ -6,7 +6,6 @@ function checkAuthorized(event) {
     event.preventDefault();
     const name = form.elements.login;
     const password = form.elements.password;
-    const checkbox = form.elements.remember;
 
     if (name.value === "roman@yandex.ru" && password.value === "123") {
         console.log("ura");
