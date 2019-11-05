@@ -6,5 +6,5 @@ const form = document.forms.login;
     if (localStorage.getItem("authorized") === "roman@yandex.ru") {
         console.log(localStorage.getItem("authorized"));
         console.log("yes");
-    } else window.location.href = `/login.html`
+    } else window.location.href = window.location.href = `${window.location.href}/login.html`;
 })();

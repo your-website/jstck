@@ -9,7 +9,7 @@ function checkAuthorized(event) {
     if (email.value === "roman@yandex.ru" && password.value === "123") {
         localStorage.setItem("authorized", `${email.value}`);
         localStorage.setItem("password", `${password.value}`);
-        window.location.href = `/index.html`;
+        window.location.href = window.location.href = `${window.location.href}/index.html`;
     } else alert("введите e-mail: roman@yandex.ru; пароль: 123");
     form.reset();
 };

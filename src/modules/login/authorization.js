@@ -11,7 +11,7 @@ function checkAuthorized(event) {
         console.log("ura");
         localStorage.setItem("authorized", `${name.value}`);
         localStorage.setItem("password", `${password.value}`);
-        window.location.href = `/index.html`;
+        window.location.href = window.location.href = `${window.location.href}/index.html`;
     } else alert("введите логин: roman@yandex.ru; пароль: 123");
     form.reset();
 };
