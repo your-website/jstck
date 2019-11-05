@@ -1,9 +1,9 @@
 const d = localStorage.getItem("authorized");
 const form__submit_login = document.querySelector('.form__submit_login');
 const form = document.forms.login;
-
 (function trty() {
     let location = "";
+    console.log('123');
     if (window.location.href === "http://localhost:8080/index.html") {
         location = "http://localhost:8080/login.html";
     } else {
