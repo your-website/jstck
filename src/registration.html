@@ -34,26 +34,27 @@
     <main class="content">
         <section class="registration">
             <h1 class="registration__content-title">Регистрация</h1>
-            <form novalidate class="form login__form" name="login" action="" method="POST">
+            <form novalidate class="form login__form" name="registration" action="" method="POST">
                 <fieldset class="form__fieldset form__fieldset_login">
                     <div class="form__field form__field_registration">
-                        <label class="form__label form__label_registration" for = "login">Логин</label>
-                        <input id="login" class="form__input form__input_registration" type="" name="login" placeholder="darkking"/>
+                        <label class="form__label form__label_registration" for = "name">Логин</label>
+                        <input id="name" class="form__input form__input_registration" type="" name="name" placeholder="darkking"/>
                     </div>
                     <div class="form__field form__field_registration">
                         <label class="form__label form__label_registration" for = "email">E-mail</label>
-                        <input id="email" class="form__input form__input_registration" type="email" name="name" pattern="\w{1,}(-?)*@[a-z]+\.{1}[a-z]{2,}" placeholder="mail@excample.com" required />
-                        <!-- <span class="form__error form__error_email">e-mail в формате: mail@excample.com</span> -->
+                        <input id="email" class="form__input form__input_registration" type="email" name="email" pattern="\w{1,}(-?)*@[a-z]+\.{1}[a-z]{2,}" placeholder="mail@excample.com" required />
+                        <span class="form__error form__error_email">e-mail в формате: mail@excample.com</span>
                     </div>
                     <div class="form__field form__field_registration-password">
                         <label class="form__label form__label_login-password" for = "password">Пароль</label>
-                        <input id="password" class="form__input form__input_registration form__input_password" type="password" name="password" required />
+                        <input id="password" class="form__input form__input_password" type="password" pattern="123" name="password" required />
+                        <span class="form__error form__error_password"></span>
                     </div>
                     <div class="form__field form__field_policy">
-                        <input id="policy" type="checkbox" class="form__checkbox form__checkbox__registration-checkbox"/>
+                        <input id="policy" type="checkbox" class="form__checkbox form__checkbox__registration-checkbox" name="checkbox"/>
                         <label class="form__label form__label_registration-checkbox" for="policy">Нажимая кнопку «Зарегистрироваться» я даю согласие на обработку моих персональных данных на условиях, изложенных в <a class="registration__link registration__link_policy" href="">«Политике конфиденциальности»</a></label>
                     </div>
-                    <button disabled="true" class="form__submit form__submit_registration" type="submit">Зарегистрироваться</button>
+                    <button class="form__submit form__submit_registration" type="submit">Зарегистрироваться</button>
                 </fieldset>
             </form>
             <p class="registration__paragraph">Уже регистрировались у нас? <a class="registration__link" href="./login.html">Войти</a></p>
