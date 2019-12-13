@@ -1,0 +1,17 @@
+.form__input.form__input_registration {
+    max-width: 380px;
+
+    padding-left: 15px;
+    font-size: 16px;
+    line-height: 120%;
+    /* identical to box height, or 19px */
+    letter-spacing: 0.25px;
+}
+
+@media screen and (max-width: 500px) {
+    .form__input.form__input_registration {
+        max-width: 380px;
+        margin-right: 17px;
+        text-align: left;
+    }
+}

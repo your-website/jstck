@@ -1,0 +1,13 @@
+.footer__container_copyright {
+    grid-area: copyright;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__container.footer__container_policy {
+        justify-content: center;
+    }
+}

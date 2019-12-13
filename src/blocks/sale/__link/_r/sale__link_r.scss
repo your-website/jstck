@@ -1,0 +1,15 @@
+.sale__link_r {
+    grid-area: r;
+}
+
+@media screen and (max-width: 768px) {
+    .sale__link.sale__link_r {
+        margin-left: 18px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sale__link.sale__link_r {
+        margin-left: 0;
+    }
+}

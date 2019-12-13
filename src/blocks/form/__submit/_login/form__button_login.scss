@@ -1,0 +1,52 @@
+.form__submit.form__submit_login {
+    width: 180px;
+    height: 52px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+    font-family: $fontsBold;
+    text-align: center;
+    font-size: 14px;
+    line-height: 115%;
+    /* identical to box height, or 16px */
+    text-align: center;
+    letter-spacing: 0.25px;
+
+    color: $ColorTextToRegister;
+
+    background-color: $ColorLoginInputSubmit;
+
+    transition: background-color 0.2s ease,
+                color 0.2s ease;
+    
+        &:hover {
+            color: $ColorTextLogin;
+            background-color: $ColorLoginInputSubmit_hover;
+        }
+
+        &:focus {
+            color: $ColorTextToRegister_pressed;
+            background-color: $ColorLoginInputSubmit_pressed;
+        }
+}
+
+@media screen and (max-width: 540px) {
+    .form__submit.form__submit_login {
+        width: 170px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .form__submit.form__submit_login {
+        width: 288px;
+        height: 52px;
+        margin: 32px auto 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .form__submit.form__submit_login {
+        margin: 32px 0 0 -3px;
+    }
+}

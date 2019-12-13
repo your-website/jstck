@@ -1,0 +1,14 @@
+.brand__link_r {
+    grid-area: r;
+}
+
+@media screen and (max-width: 768px) {
+    .brand__link.brand__link_r {
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .brand__link.brand__link_r {
+        margin: 0 0 0 auto;
+    }
+}

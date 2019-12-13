@@ -1,0 +1,35 @@
+.form__submit.form__submit_registration {
+    width: 200px;
+    height: 52px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    font-family: $fontsBold;
+    font-size: 14px;
+    line-height: 115%;
+    /* identical to box height, or 16px */
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: $ColorTextToRegister;
+
+    background-color: $ColorToRegister;
+
+    transition: background-color 0.2s ease,
+                color 0.2s ease;
+    
+        &:hover {
+            color: $ColorTextToRegister_hover;
+            background-color: $ColorToRegister_hover;
+        }
+
+        &:focus {
+            color: $ColorTextToRegister_pressed;
+            background-color: $ColorToRegister_pressed;
+        }
+}
+
+@media screen and (max-width: 360px) {
+    .form__submit.form__submit_registration {
+    }
+}

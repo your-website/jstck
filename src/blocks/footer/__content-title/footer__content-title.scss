@@ -1,0 +1,24 @@
+.footer__content-title {
+    margin: 0 0 19px 0;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 135%;
+    /* or 24px */
+    letter-spacing: 0.25px;
+
+    color: $ColorTextTitleFooter;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__content-title {
+        letter-spacing: 1.2px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer__content-title {
+        text-align: center;
+        padding-right: 0;
+    }
+}

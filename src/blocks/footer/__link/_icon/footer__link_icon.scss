@@ -1,0 +1,16 @@
+.footer__link.footer__link_icon {
+    margin-left: 14px;
+}
+
+.footer__link.footer__link_icon:first-of-type {
+    margin-left: 1px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__link.footer__link_icon:first-of-type {
+        margin-left: 17px;
+    }
+    .footer__link.footer__link_icon {
+        margin-left: 26px;
+    }
+}

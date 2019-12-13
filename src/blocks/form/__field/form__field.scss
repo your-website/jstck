@@ -1,0 +1,11 @@
+@import './_sale/form__field_sale.scss';
+@import './_login/form__field_login.scss';
+@import './_login-checkbox/form__field_login-checkbox.scss';
+@import './_login-password/form__field_login-password.scss';
+@import './_registration/form__field_registration.scss';
+@import './_registration-password/form__field_registration-password.scss';
+@import './_policy/form__field_policy.scss';
+
+.form__field {
+    position: relative;
+}

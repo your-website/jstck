@@ -1,0 +1,10 @@
+.form__field_sale {
+    display: inline-block;
+}
+
+@media screen and (max-width: 500px) {
+    .form__field_sale {
+        display: flex;
+        justify-content: center;
+    }
+}

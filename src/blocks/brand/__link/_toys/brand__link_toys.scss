@@ -1,0 +1,17 @@
+.brand__link.brand__link_toys {
+    grid-area: toys;
+}
+
+@media screen and (max-width: 768px) {
+    .brand__link.brand__link_toys {
+        align-self: center;
+        margin: 0 35px 0 auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .brand__link.brand__link_toys {
+        margin: 0 0 0 auto;
+        align-self: flex-start;
+    }
+}

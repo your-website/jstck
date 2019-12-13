@@ -1,0 +1,9 @@
+.header__container.header__container_login {
+    opacity: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .header__container.header__container_login {
+        opacity: 1;
+    }
+}

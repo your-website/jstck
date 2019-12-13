@@ -1,0 +1,17 @@
+.footer__container.footer__container_social-links {
+    padding-top: 37px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__container.footer__container_social-links {
+        padding: 24px 0 24px 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer__container.footer__container_social-links {
+        padding: 24px 0 35px 0;
+    }
+}

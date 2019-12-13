@@ -1,0 +1,23 @@
+.login__link  {
+    text-decoration: none;
+    cursor: pointer;
+    font-family: $fontsBold;
+    font-size: 16px;
+    line-height: 125%;
+    /* identical to box height, or 20px */
+    letter-spacing: 0.25px;
+
+    color:#0041A5;
+
+    transition: color 0.2s ease;
+
+        &:hover {
+            color: $ColorTextLinkHeader_hover;
+            text-decoration-line: underline;
+        }
+
+        &:focus {
+            color: $ColorTextLinkHeader_pressed;
+            text-decoration-line: underline;
+        }
+}

@@ -1,0 +1,35 @@
+@import './__content-title/login__content-title.scss';
+@import './__link/login__link.scss';
+@import './__paragraph/login__paragraph.scss';
+
+.login {
+    font-family: $fonts;
+    max-width: 1200px;
+    min-height: 719px;
+    margin: 0 auto;
+    padding: 29px $paddingWidth1440 0;
+    background-image: url("./images/bg.png");
+    background-position: right 148px top 42px;
+    background-repeat: no-repeat;
+}
+ 
+@media screen and (max-width: 768px) {
+    .login {
+        font-family: $fonts;
+        padding: 0 $paddingWidth768;
+        min-height: 733px;
+        background-position: right 32px top 43px;
+        background-size: 380px 428px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .login {
+        min-height: none;
+        max-height: 1014px;
+        margin: 0 auto 0;
+        padding: 0 2px 0 17px;
+        background-position: right 16px top 289px;
+        background-size: 288px 325px;
+    }
+}

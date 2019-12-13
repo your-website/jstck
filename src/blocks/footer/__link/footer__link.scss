@@ -1,0 +1,40 @@
+@import './_policy/footer__link_policy.scss';
+@import './_icon/footer__link_icon.scss';
+@import './_space/footer__link_space.scss';
+@import './_logo/footer__link_logo.scss';
+
+.footer__link {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 115%;
+    /* identical to box height, or 16px */
+    letter-spacing: 0.25px;
+    color: $ColorTextLinkFooter;
+    transition: color 0.2s ease;
+    max-width: 160px;
+        &:hover {
+            color: $ColorTextLinkFooter_hover;
+        }
+
+        &:focus {
+            color: $ColorTextLinkFooter_pressed;
+        }
+}
+
+
+.footer__link svg:hover .footer__icon_hover {
+    fill: $ColorSocialIcons_hover;
+}
+
+.footer__link:focus .footer__icon_hover {
+    fill: $ColorSocialIcons_pressed;
+}
+
+.footer__link svg .footer__icon_hover { 
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+  }

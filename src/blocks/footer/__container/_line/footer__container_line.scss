@@ -1,0 +1,17 @@
+.footer__container_line {
+    margin-top: 22px;
+    border-top: 1px solid $ColorTextLinkPolicy;
+    grid-area: liner;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__container_line {
+        margin-top: 26px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .footer__container_line {
+        margin-top: 0;
+    }
+}

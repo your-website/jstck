@@ -1,0 +1,24 @@
+.footer__container_about {
+    grid-area: about;
+    margin-left: 16%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer__container_about {
+        margin-left: 27%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .footer__container_about {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer__container_about {
+        margin: 2px auto 34px;
+        text-align: center;
+    }
+}

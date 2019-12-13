@@ -1,0 +1,61 @@
+.header__button-login {
+    width: 88px;
+    height: 40px;
+
+    margin-right: 16px;
+    
+    border: 1px solid #00376E;
+    outline: none;
+    cursor: pointer;
+    
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 115%;
+    text-align: center;
+    letter-spacing: 0.8px;
+    color: $ColorTextLogin;
+
+    background-color: $ColorLogin;
+
+    transition: background-color 0.2s ease,
+                color 0.2s ease;
+    
+        &:hover {
+            border: 1px solid #00376E;
+            color: $ColorTextLogin_hover;
+            background-color: $ColorLogin_hover;
+        }
+
+        &:focus {
+            border: 1px solid #00376E;
+            color: $ColorTextLogin_pressed;
+            background-color: $ColorLogin_pressed;
+        }
+}
+
+@media screen and (max-width: 700px) {
+    .header__button-login {
+        width: 200px;
+        height: 40px;
+        margin: 52px 0 0 0;
+
+        border: 1px solid #ffffff;
+        outline: none;
+
+        color: $ColorTextLinkMobileMenu;
+        background-color: rgba(255, 255, 255, 0);
+    
+            &:hover {
+                border: 1px solid #ffffff;
+                color: $ColorTextLinkMobileMenu_hover;
+                background-color: $ColorButonMobileMenu_hover;
+            }
+    
+            &:focus {
+                border: 1px solid #ffffff;
+                color: $ColorTextLinkMobileMenu_hover;
+                background-color: $ColorButonMobileMenu_hover;;
+            }
+    }
+}

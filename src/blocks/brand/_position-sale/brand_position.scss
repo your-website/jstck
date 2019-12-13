@@ -1,0 +1,16 @@
+.brand_position-sale {
+    max-width: 1144px;
+}
+
+@media screen and (max-width: 768px) {
+    .brand_position-sale {
+        min-height: 411px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .brand.brand_position-sale {
+        margin-top: 80px;
+    }
+}

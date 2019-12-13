@@ -1,0 +1,24 @@
+.form__checkbox__registration-checkbox {
+    opacity: 0;
+}
+
+.form__checkbox__registration-checkbox + label::after {
+    content: none;
+}
+
+.form__checkbox__registration-checkbox + label::before {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+
+.form__checkbox__registration-checkbox:checked + label::before {
+    background-color: #37DCD2;
+    border: none;
+}
+
+.form__checkbox__registration-checkbox:checked + label::after {
+    content: "";
+}
+
+.form__checkbox__registration-checkbox:focus + label::before {
+}

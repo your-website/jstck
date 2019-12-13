@@ -1,0 +1,52 @@
+.header__button-registration {
+    width: 140px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 115%;
+    text-align: center;
+    letter-spacing: 0.7px;
+    color: $ColorTextRegistration;
+
+    background-color: $ColorRegistration;
+
+    transition: background-color 0.2s ease,
+                color 0.2s ease;
+    
+        &:hover {
+            color: $ColorTextRegistration_hover;
+            background-color: $ColorRegistration_hover;
+        }
+
+        &:focus {
+            color: $ColorTextRegistration_pressed;
+            background-color: $ColorRegistration_pressed;
+        }
+}
+
+@media screen and (max-width: 700px) {
+    .header__button-registration {
+        width: 200px;
+        height: 40px;
+        margin: 40px 0 0 0;
+
+        outline: none;
+
+        color: $ColorTextLinkMobileMenu;
+    
+            &:hover {
+                color: $ColorTextLinkMobileMenu_hover;
+                background-color: $ColorButonMobileMenu_hover;
+            }
+    
+            &:focus {
+                color: $ColorTextLinkMobileMenu_hover;
+                background-color: $ColorButonMobileMenu_hover;;
+            }
+    }
+}

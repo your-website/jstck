@@ -1,0 +1,18 @@
+.sale__paragraph {
+    margin: 12px 0 0 0;
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 135%;
+    letter-spacing: 0.25px;
+}
+
+@media screen and (max-width: 500px) {
+    .sale__paragraph {
+        margin: 17px 13px 0 0;
+        font-size: 16px;
+        line-height: 135%;
+        /* or 22px */
+        text-align: center;
+        letter-spacing: 0.25px;
+    }
+}

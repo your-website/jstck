@@ -1,0 +1,13 @@
+@import './_policy/footer__container_policy.scss';
+@import './_about/footer__container_about.scss';
+@import './_help/footer__container_help.scss';
+@import './_product/footer__container_product.scss';
+@import './_social-links/footer__container_social-links.scss';
+@import './_social/footer__container_social.scss';
+@import './_line/footer__container_line.scss';
+@import './_copyright/footer__container_copyright.scss';
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+}
